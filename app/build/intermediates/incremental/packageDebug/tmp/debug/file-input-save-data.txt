@@ -1,10 +1,10 @@
 #Internal package file, do not edit.
-#Fri Sep 14 23:11:37 PET 2018
-1.base=/Users/gerardo/Downloads/AppSafeCity/app/build/intermediates/transforms/dexMerger/debug/12
+#Sat Sep 22 13:31:02 COT 2018
+1.base=C\:\\Users\\Joel-64\\AndroidStudioProjects\\Proyectos\\appSafeCityv1\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\12
 2.path=classes.dex
 0.baseType=DIRECTORY
 3.baseType=DIRECTORY
-2.base=/Users/gerardo/Downloads/AppSafeCity/app/build/intermediates/transforms/dexMerger/debug/15
+2.base=C\:\\Users\\Joel-64\\AndroidStudioProjects\\Proyectos\\appSafeCityv1\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\13
 3.set=DEX
 2.set=DEX
 1.baseType=DIRECTORY
@@ -12,8 +12,8 @@
 count=4
 1.set=DEX
 0.path=classes.dex
-3.base=/Users/gerardo/Downloads/AppSafeCity/app/build/intermediates/transforms/dexMerger/debug/14
+3.base=C\:\\Users\\Joel-64\\AndroidStudioProjects\\Proyectos\\appSafeCityv1\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\14
 0.set=DEX
-0.base=/Users/gerardo/Downloads/AppSafeCity/app/build/intermediates/transforms/dexMerger/debug/13
+0.base=C\:\\Users\\Joel-64\\AndroidStudioProjects\\Proyectos\\appSafeCityv1\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\11
 2.baseType=DIRECTORY
 1.path=classes.dex

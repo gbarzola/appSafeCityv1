@@ -12,6 +12,33 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+
+        <activity android:name=".activities.PrimerActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.GeneralActivity" />
+        <activity android:name=".activities.RedesActivity" />
+        <activity android:name=".activities.MapaBasicoActivity" />
+        <activity android:name=".activities.ResultActivity" />
+
+
+
+        <service android:name=".MyAndroidFirebaseInstanceIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".MyAndroidFirebaseMsgService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
@@ -19,32 +46,6 @@
             android:name="com.google.android.maps.v2.API_KEY"
             android:value="AIzaSyCCmlhMQ2wtE-bs59HTHMcVKpkAlGGg7sM" />
 
-        <activity android:name=".activities.PrimerActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".activities.GeneralActivity">
-
-        </activity>
-        <activity android:name=".activities.RedesActivity" />
-        <activity android:name=".activities.MapaBasicoActivity">
-        </activity>
-        <service android:name=".MyAndroidFirebaseMsgService">
-            <intent-filter>
-                <action android:name="com.google.firebase.MESSAGING_EVENT" />
-            </intent-filter>
-        </service>
-
-        <service android:name=".MyAndroidFirebaseInstanceIdService">
-            <intent-filter>
-                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
-            </intent-filter>
-        </service>
-
-        <activity android:name=".activities.ResultActivity"></activity>
     </application>
 
 </manifest>

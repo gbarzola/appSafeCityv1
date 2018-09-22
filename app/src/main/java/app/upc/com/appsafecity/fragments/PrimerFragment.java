@@ -5,9 +5,8 @@ import android.app.ProgressDialog;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -29,7 +28,6 @@ import app.upc.com.appsafecity.R;
 import app.upc.com.appsafecity.adapters.NoticiasAdapter;
 import app.upc.com.appsafecity.models.Noticia;
 
-
 import static app.upc.com.appsafecity.Constants.URL_NOTICIAS;
 
 
@@ -41,10 +39,13 @@ public class PrimerFragment extends Fragment {
     private static final String TAG = PrimerFragment.class.getSimpleName();
     private List<Noticia> noticias;
     private RecyclerView recyclerView;
-    private GridLayoutManager gridLayout;
+    private RecyclerView.LayoutManager managerLayout;
     private NoticiasAdapter adapter;
 
-    protected void onCreate(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         v = inflater.inflate(R.layout.fragment_primer, container, false);
 
@@ -52,11 +53,12 @@ public class PrimerFragment extends Fragment {
         noticias = new ArrayList<>();
         loadUrlDataNews();
 
-        gridLayout = new GridLayoutManager(getContext(), 1);
-        recyclerView.setLayoutManager(gridLayout);
+        managerLayout = new LinearLayoutManager(getContext());
+        recyclerView.setLayoutManager(managerLayout);
 
         adapter = new NoticiasAdapter(getContext(), noticias);
         recyclerView.setAdapter(adapter);
+        return v;
 
     }
 
@@ -71,7 +73,6 @@ public class PrimerFragment extends Fragment {
                 URL_NOTICIAS, new com.android.volley.Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
-
                 progressDialog.dismiss();
 
                 try {
@@ -83,16 +84,15 @@ public class PrimerFragment extends Fragment {
 
                         JSONObject jo = array.getJSONObject(i);
 
-                        Noticia dataNoticias =
-                                new Noticia(
-                                        jo.getInt("id"),
-                                        jo.getString("titulo"),
-                                        jo.getString("contenido"),
-                                        jo.getString("fecha publicacion"),
-                                        jo.getString("fuente"),
-                                        jo.getString("foto")
-                                );
-                        noticias.add(dataNoticias);
+                        Noticia noticia = new Noticia(
+                            jo.getInt("id"),
+                            jo.getString("titulo"),
+                            jo.getString("contenido"),
+                            jo.getString("fecha_publicacion"),
+                            jo.getString("fuente"),
+                            jo.getString("fotos")
+                        );
+                        noticias.add(noticia);
                     }
 
                     adapter = new NoticiasAdapter(getActivity().getApplicationContext(), noticias);
@@ -106,7 +106,6 @@ public class PrimerFragment extends Fragment {
         }, new com.android.volley.Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-
                 Toast.makeText(getContext(), "Error" + error.toString(), Toast.LENGTH_SHORT).show();
 
             }

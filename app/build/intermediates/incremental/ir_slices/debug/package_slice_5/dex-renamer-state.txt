@@ -1,4 +1,4 @@
-#Sat Sep 22 11:22:19 PET 2018
-base.0=/Users/gerardo/Downloads/AppSafeCity/app/build/intermediates/transforms/dexMerger/debug/6
+#Sat Sep 22 13:25:05 COT 2018
+base.0=C\:\\Users\\Joel-64\\AndroidStudioProjects\\Proyectos\\appSafeCityv1\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\5
 path.0=classes.dex
 renamed.0=classes.dex

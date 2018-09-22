@@ -1,87 +1,104 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="x86"
+    abi="armeabi-v7a,armeabi"
     api-level="23"
     build-mode="COLD"
-    density="560dpi"
+    density="xhdpi"
     format="10"
-    ir-eligibility="COMPATIBLE"
     plugin-version="3.1.4"
-    timestamp="1537633330906"
-    token="5370784475978539744"
+    timestamp="1537641057799"
+    token="3542000727444765156"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="635" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="58" />
+        duration="0" />
     <task
         name="verifier"
-        duration="74" />
+        duration="0" />
 
     <artifact
-        location="/Users/gerardo/Downloads/AppSafeCity/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
-        type="SPLIT" />
-    <artifact
-        location="/Users/gerardo/Downloads/AppSafeCity/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
+        location="C:\Users\Joel-64\AndroidStudioProjects\Proyectos\appSafeCityv1\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
         type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
-        timestamp="1537629910608"
-        verifier="FULL_BUILD_REQUESTED" >
+        ir-eligibility="METHOD_DELETED"
+        timestamp="1537638715287"
+        verifier="COLD_SWAP_REQUESTED" >
         <artifact
-            location="/Users/gerardo/Downloads/AppSafeCity/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
+            location="C:\Users\Joel-64\AndroidStudioProjects\Proyectos\appSafeCityv1\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/gerardo/Downloads/AppSafeCity/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
+            location="C:\Users\Joel-64\AndroidStudioProjects\Proyectos\appSafeCityv1\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/gerardo/Downloads/AppSafeCity/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
+            location="C:\Users\Joel-64\AndroidStudioProjects\Proyectos\appSafeCityv1\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/gerardo/Downloads/AppSafeCity/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
+            location="C:\Users\Joel-64\AndroidStudioProjects\Proyectos\appSafeCityv1\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/gerardo/Downloads/AppSafeCity/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+            location="C:\Users\Joel-64\AndroidStudioProjects\Proyectos\appSafeCityv1\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/gerardo/Downloads/AppSafeCity/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
+            location="C:\Users\Joel-64\AndroidStudioProjects\Proyectos\appSafeCityv1\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/gerardo/Downloads/AppSafeCity/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
+            location="C:\Users\Joel-64\AndroidStudioProjects\Proyectos\appSafeCityv1\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/gerardo/Downloads/AppSafeCity/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+            location="C:\Users\Joel-64\AndroidStudioProjects\Proyectos\appSafeCityv1\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/gerardo/Downloads/AppSafeCity/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
+            location="C:\Users\Joel-64\AndroidStudioProjects\Proyectos\appSafeCityv1\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/gerardo/Downloads/AppSafeCity/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
+            location="C:\Users\Joel-64\AndroidStudioProjects\Proyectos\appSafeCityv1\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/gerardo/Downloads/AppSafeCity/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+            location="C:\Users\Joel-64\AndroidStudioProjects\Proyectos\appSafeCityv1\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/gerardo/Downloads/AppSafeCity/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
+            location="C:\Users\Joel-64\AndroidStudioProjects\Proyectos\appSafeCityv1\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
             type="SPLIT_MAIN" />
     </build>
     <build
         build-mode="COLD"
-        ir-eligibility="COMPATIBLE"
-        timestamp="1537633330906"
+        ir-eligibility="R_CLASS_CHANGE"
+        timestamp="1537640693787"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
-            location="/Users/gerardo/Downloads/AppSafeCity/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
+            location="C:\Users\Joel-64\AndroidStudioProjects\Proyectos\appSafeCityv1\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/gerardo/Downloads/AppSafeCity/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
+            location="C:\Users\Joel-64\AndroidStudioProjects\Proyectos\appSafeCityv1\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\Joel-64\AndroidStudioProjects\Proyectos\appSafeCityv1\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\Joel-64\AndroidStudioProjects\Proyectos\appSafeCityv1\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\Joel-64\AndroidStudioProjects\Proyectos\appSafeCityv1\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\Users\Joel-64\AndroidStudioProjects\Proyectos\appSafeCityv1\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
+            type="SPLIT" />
+    </build>
+    <build
+        build-mode="COLD"
+        timestamp="1537641057799"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="C:\Users\Joel-64\AndroidStudioProjects\Proyectos\appSafeCityv1\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
             type="SPLIT_MAIN" />
     </build>
 

@@ -2194,7 +2194,7 @@ public final class R {
      * <tr><td>barrier</td><td>2</td><td></td></tr>
      * <tr><td>chains</td><td>4</td><td></td></tr>
      * <tr><td>dimensions</td><td>8</td><td></td></tr>
-     * <tr><td>direct</td><td>1</td><td>for now only direct & barriers</td></tr>
+     * <tr><td>direct</td><td>1</td><td></td></tr>
      * <tr><td>none</td><td>0</td><td></td></tr>
      * <tr><td>standard</td><td>3</td><td></td></tr>
      * </table>
@@ -4284,14 +4284,15 @@ public final class R {
     public static final int google_crash_reporting_api_key=0x7f0d003b;
     public static final int google_storage_bucket=0x7f0d003c;
     public static final int hello_blank_fragment=0x7f0d003d;
-    public static final int password_toggle_content_description=0x7f0d003e;
-    public static final int path_password_eye=0x7f0d003f;
-    public static final int path_password_eye_mask_strike_through=0x7f0d0040;
-    public static final int path_password_eye_mask_visible=0x7f0d0041;
-    public static final int path_password_strike_through=0x7f0d0042;
-    public static final int project_id=0x7f0d0043;
-    public static final int search_menu_title=0x7f0d0044;
-    public static final int status_bar_notification_info_overflow=0x7f0d0045;
+    public static final int imagen=0x7f0d003e;
+    public static final int password_toggle_content_description=0x7f0d003f;
+    public static final int path_password_eye=0x7f0d0040;
+    public static final int path_password_eye_mask_strike_through=0x7f0d0041;
+    public static final int path_password_eye_mask_visible=0x7f0d0042;
+    public static final int path_password_strike_through=0x7f0d0043;
+    public static final int project_id=0x7f0d0044;
+    public static final int search_menu_title=0x7f0d0045;
+    public static final int status_bar_notification_info_overflow=0x7f0d0046;
   }
   public static final class style {
     public static final int AlertDialog_AppCompat=0x7f0e0000;
@@ -9587,7 +9588,7 @@ public final class R {
      * <tr><td>barrier</td><td>2</td><td></td></tr>
      * <tr><td>chains</td><td>4</td><td></td></tr>
      * <tr><td>dimensions</td><td>8</td><td></td></tr>
-     * <tr><td>direct</td><td>1</td><td>for now only direct & barriers</td></tr>
+     * <tr><td>direct</td><td>1</td><td></td></tr>
      * <tr><td>none</td><td>0</td><td></td></tr>
      * <tr><td>standard</td><td>3</td><td></td></tr>
      * </table>

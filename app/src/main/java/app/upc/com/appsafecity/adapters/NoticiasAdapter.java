@@ -18,21 +18,23 @@ import app.upc.com.appsafecity.models.Noticia;
 public class NoticiasAdapter extends RecyclerView.Adapter<NoticiasAdapter.ViewHolder> {
     private Context context;
     private List<Noticia> noticias;
+    private LayoutInflater inflador;
 
     public NoticiasAdapter(Context context, List<Noticia> noticias) {
         this.context = context;
         this.noticias = noticias;
+        inflador = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
     }
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.fragment_primer,parent,false);
-        return new ViewHolder(itemView);
+        View v = inflador.inflate(R.layout.item_news,parent,false);
+        return new ViewHolder(v);
     }
 
     @Override
     public void onBindViewHolder(final ViewHolder holder, int position) {
-        holder.Titulo.setText(noticias.get(position).getTitulo());
+        holder.titulo.setText(noticias.get(position).getTitulo());
         holder.Contenido.setText(noticias.get(position).getContenido());
         holder.FechaPublicacion.setText(noticias.get(position).getFecha_publicacion());
         holder.Fuente.setText(noticias.get(position).getFuente());
@@ -46,18 +48,18 @@ public class NoticiasAdapter extends RecyclerView.Adapter<NoticiasAdapter.ViewHo
     }
 
 
-    public class ViewHolder extends  RecyclerView.ViewHolder{
+    class ViewHolder extends  RecyclerView.ViewHolder{
 
-        public TextView Titulo, Contenido, FechaPublicacion, Fuente;
-        public ImageView imageView;
+        TextView titulo, Contenido, FechaPublicacion, Fuente;
+        ImageView imageView;
 
-        public ViewHolder(View itemView) {
+        ViewHolder(View itemView) {
             super(itemView);
-            Titulo = (TextView) itemView.findViewById(R.id.tv_titulo);
-            Contenido = (TextView) itemView.findViewById(R.id.tv_contenido);
-            FechaPublicacion = (TextView) itemView.findViewById(R.id.tv_fecha_publicacion);
-            imageView = (ImageView) itemView.findViewById(R.id.foto_news);
-            Fuente = (TextView) itemView.findViewById(R.id.tv_fuente);
+            titulo = itemView.findViewById(R.id.tv_titulo);
+            Contenido = itemView.findViewById(R.id.tv_contenido);
+            FechaPublicacion = itemView.findViewById(R.id.tv_fecha_publicacion);
+            imageView = itemView.findViewById(R.id.foto_news);
+            Fuente = itemView.findViewById(R.id.tv_fuente);
         }
 
 
